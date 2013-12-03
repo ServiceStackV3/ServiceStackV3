@@ -5,16 +5,16 @@ This is project is an archive containing documentation and content available for
 
 ## See the [wiki for the available documentation on v3](https://github.com/ServiceStackV3/ServiceStackV3/wiki)
 
-### NuGet
+## NuGet
 
-#### Referencing v3 packages in New Projects
+### Referencing v3 packages in New Projects
 
 If you want a new project to use ServiceStack's v3 packages then you need to specify the version number 
 when installing via NuGet, e.g:                
 
     PM> Install-Package ServiceStack -Version 3.9.71
 
-#### Existing Projects
+### Existing Projects
 
 Existing ServiceStack v3 NuGet packages already have a <b>[3,4)</b> version constraint applied to them which should prevent them 
 from implicitly upgrading to the latest v4+ packages when installing other dependencies. 
@@ -24,8 +24,14 @@ this dialog only appears for v4 packages so if this dialog appears when upgradin
 use the NuGet <b>Package Manager Console</b>:
 
     PM> Update-Package ServiceStack -Version 3.9.71
+    
+#### Uninstalling an existing version
 
-#### NuGet package authors with a dependency on ServiceStack
+If you've mistakingly installed the wrong version of ServiceStack, it can be easily uninstalled with:
+
+    PM> Uninstall-Package ServiceStack -Force
+
+### NuGet package authors with a dependency on ServiceStack
 
 If you maintain a NuGet package that has a dependency on any ServiceStack package,
 it can be constrained to use only v3 packages by specifying the <b>version="[3,4)"</b>
@@ -36,7 +42,7 @@ version constraint in your ServiceStack dependency, e.g:
 More info about [versioning is available on NuGet](http://docs.nuget.org/docs/reference/versioning).
 
 
-### Support
+## Support
 
 Whilst there is no official direct or commercial support for the legacy v3 releases, StackOverflow remains the optimal place to ask for support. Please also include the `#servicestack-v3` hashtag when [Asking a new question](http://stackoverflow.com/questions/ask).
 
@@ -44,7 +50,7 @@ Whilst there is no official direct or commercial support for the legacy v3 relea
 
 See the [contributing guide](https://github.com/ServiceStackV3/ServiceStackV3/wiki/Contributing) for more details.
 
-### Source code for V3
+## Source code for V3
 
 The [BSD](https://github.com/ServiceStack/ServiceStack/blob/v3/LICENSE) source code for ServiceStack v3 is available in the **v3 branches**, i.e:
 
