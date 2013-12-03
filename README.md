@@ -24,6 +24,37 @@ The source code for ServiceStack v3 is available in the **v3 branches**, i.e:
   - [SocialBootstrapApi/v3](https://github.com/ServiceStack/SocialBootstrapApi/tree/v3)
   - [RedisAdmin UI](https://github.com/ServiceStackV3/ServiceStack.RedisWebServices)
 
+### NuGet
+
+#### Referencing v3 packages in New Projects
+
+If you want a new project to use ServiceStack's v3 packages then you need to specify the version number 
+when installing via NuGet, e.g:                
+
+    PM> Install-Package ServiceStack -Version 3.9.71
+
+#### Existing Projects
+
+Existing ServiceStack v3 NuGet packages already have a <b>[3,4)</b> version constraint applied to them which should prevent them 
+from implicitly upgrading to the latest v4+ packages when installing other dependencies. 
+
+The latest v4 ServiceStack packages requires accepting an end-user license to install the packages, 
+this dialog only appears for v4 packages so if this dialog appears when upgrading ServiceStack, decline and 
+use the NuGet <b>Package Manager Console</b>:
+
+    PM> Update-Package ServiceStack -Version 3.9.71
+
+#### NuGet package authors with a dependency on ServiceStack
+
+If you maintain a NuGet package that has a dependency on any ServiceStack package,
+it can be constrained to use only v3 packages by specifying the <b>version="[3,4)"</b>
+version constraint in your ServiceStack dependency, e.g:
+
+    <dependency id="ServiceStack" version="[3,4)" />
+
+More info about [versioning is available on NuGet](http://docs.nuget.org/docs/reference/versioning).
+
+
 ### Support
 
 Whilst there is no official direct or commercial support for the legacy v3 releases, StackOverflow remains the optimal place to ask for support. Please also include the `#servicestack-v3` hashtag when [Asking a new question](http://stackoverflow.com/questions/ask).
