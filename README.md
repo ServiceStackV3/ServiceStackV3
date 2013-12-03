@@ -3,9 +3,9 @@ ServiceStack V3
 
 This is project is an archive containing documentation and content available for the legacy v3 BSD release of ServiceStack.
 
-### See the [wiki for the available docs on v3](https://github.com/ServiceStackV3/ServiceStackV3/wiki)
+## See the [wiki for the available documentation on v3](https://github.com/ServiceStackV3/ServiceStackV3/wiki)
 
-## Source code for V3
+### Source code for V3
 
 The source code for ServiceStack v3 is available in the **v3 branches**, i.e:
 
@@ -28,6 +28,6 @@ The source code for ServiceStack v3 is available in the **v3 branches**, i.e:
 
 Whilst there is no official direct or commercial support for the legacy v3 releases, StackOverflow remains the optimal place to ask for support. Please also include the `#servicestack-v3` hashtag when [Asking a new question](http://stackoverflow.com/questions/ask).
 
-[Service Stack](https://servicestack.net) still maintains continuous integration builds and publishes monthly periodic releases of ServiceStack v3 to NuGet. As there is no manual Q/A process for v3 releases, any new fixes contributed **must** be accompanied by unit or integration tests verifying the fix and **must not** change existing behavior or cause any regressions on the existing test suite. 
+[Service Stack](https://servicestack.net) still maintains continuous integration builds and publishes monthly periodic releases of ServiceStack v3 to NuGet. As there is no manual Q/A process for v3 releases, any new fixes contributed **must** be accompanied by unit or integration tests verifying the fix and **must not** change existing behavior or cause any regressions to the existing test suite. 
 
 See the [contributing guide](https://github.com/ServiceStackV3/ServiceStackV3/wiki/Contributing) for more details.
