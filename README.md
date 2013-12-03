@@ -46,7 +46,7 @@ See the [contributing guide](https://github.com/ServiceStackV3/ServiceStackV3/wi
 
 ### Source code for V3
 
-The source code for ServiceStack v3 is available in the **v3 branches**, i.e:
+The [BSD](https://github.com/ServiceStack/ServiceStack/blob/v3/LICENSE) source code for ServiceStack v3 is available in the **v3 branches**, i.e:
 
   - [ServiceStack/v3](https://github.com/ServiceStack/ServiceStack/tree/v3)
   - [ServiceStack.Text/v3](https://github.com/ServiceStack/ServiceStack.Text/tree/v3)
