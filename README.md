@@ -13,6 +13,11 @@ If you want a new project to use ServiceStack's v3 packages then you need to spe
 when installing via NuGet, e.g:                
 
     PM> Install-Package ServiceStack -Version 3.9.71
+    
+All v3 packages can be installed the same way, e.g install **ServiceStack.Text** and **ServiceStack.Redis** with:
+
+    PM> Install-Package ServiceStack.Text -Version 3.9.71
+    PM> Install-Package ServiceStack.Redis -Version 3.9.71
 
 ### Existing Projects
 
