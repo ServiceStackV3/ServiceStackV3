@@ -19,6 +19,12 @@ All v3 packages can be installed the same way, e.g install **ServiceStack.Text**
     PM> Install-Package ServiceStack.Text -Version 3.9.71
     PM> Install-Package ServiceStack.Redis -Version 3.9.71
 
+### How to install if using NuGet 2.8+ or higher
+
+NuGet changed their [dependency resolution behavior](http://docs.nuget.org/docs/release-notes/nuget-2.8#Patch_Resolution_for_Dependencies) in 2.8. To restore the existing behavior of downloading the highest matching versions you need to add  `-DependencyVersion Highest`, e.g:
+
+    PM> Install-Package ServiceStack -Version 3.9.71 -DependencyVersion Highest
+
 ### Existing Projects
 
 Existing ServiceStack v3 NuGet packages already have a <b>[3,4)</b> version constraint applied to them which should prevent them 
