@@ -24,6 +24,14 @@ All v3 packages can be installed the same way, e.g install **ServiceStack.Text**
 NuGet changed their [dependency resolution behavior](http://docs.nuget.org/docs/release-notes/nuget-2.8#Patch_Resolution_for_Dependencies) in 2.8. To restore the existing behavior of downloading the highest matching versions you need to add  `-DependencyVersion Highest`, e.g:
 
     PM> Install-Package ServiceStack -Version 3.9.71 -DependencyVersion Highest
+    
+### Overriding NuGet's dependency resolution
+
+Often times it can be easier to avoid NuGet's default dependency resolution and just specify the packages for each of the dependencies you want installed, e.g:
+
+    PM> Install-Package ServiceStack -IgnoreDependencies -Version 3.9.71
+    PM> Install-Package ServiceStack.Text -IgnoreDependencies -Version 3.9.71
+    PM> Install-Package ServiceStack.Redis -IgnoreDependencies -Version 3.9.71
 
 ### Existing Projects
 
