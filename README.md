@@ -63,7 +63,7 @@ More info about [versioning is available on NuGet](http://docs.nuget.org/docs/re
 
 ## Support
 
-Whilst there is no official direct or commercial support for the legacy v3 releases, StackOverflow remains the optimal place to ask for support. Please also include the `#servicestack-v3` hashtag when [Asking a new question](http://stackoverflow.com/questions/ask).
+Whilst there is no official direct or commercial support for the legacy v3 releases, StackOverflow remains the optimal place to ask for support. Please tag the question as `[servicestack-bsd]` when [asking a new question](http://stackoverflow.com/questions/ask?tags=servicestack-bsd).
 
 As there is no manual Q/A process for v3 releases, any new fixes contributed **must** be accompanied by unit or integration tests verifying the fix and **must not** change existing behavior, cause any regressions to the existing test suite or otherwise break backwards compatibility to the existing code-base. 
 
