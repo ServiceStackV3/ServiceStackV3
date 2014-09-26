@@ -86,5 +86,4 @@ The [BSD](https://github.com/ServiceStack/ServiceStack/blob/v3/LICENSE) source c
   - [ServiceStack.UseCases/v3](https://github.com/ServiceStack/ServiceStack.UseCases/tree/v3)
   - [ServiceStack.Examples/v3](https://github.com/ServiceStack/ServiceStack.Examples/tree/v3)
   - [SocialBootstrapApi/v3](https://github.com/ServiceStack/SocialBootstrapApi/tree/v3)
-  - [RedisAdmin UI](https://github.com/ServiceStackV3/ServiceStack.RedisWebServices)
 
